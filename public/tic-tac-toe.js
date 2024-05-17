@@ -604,6 +604,9 @@ const gameChecker = (e)=>{
             const divCont = document.getElementById("container");
             document.body.insertBefore(newh2,divCont);
             checker.add("gameover");
+            losses+=1;
+            storeSummary(wins, losses, ties);
+            updateSummary();
             //remove the eventlistener
             gbox.removeEventListener("click",gameChecker);
         }
