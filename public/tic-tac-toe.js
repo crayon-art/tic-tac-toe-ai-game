@@ -93,7 +93,12 @@ const createGameGrid = () =>{
     document.body.children[1].removeChild(choice);
 
     const cont = document.getElementById("container");
-    cont.style.backgroundImage=`url("./media/tictactoe.jpg")`;
+    if(window.innerWidth < 530){
+        cont.style.backgroundImage=`url("./media/tictactoeSmall.jpg")`;
+        cont.style.backgroundRepeat = 'no-repeat';
+        cont.style.backgroundSize = 'cover';
+    }
+    else cont.style.backgroundImage=`url("./media/tictactoe.jpg")`;
 
     for (let i=0; i<3; i++){
         for(let j=0; j<3; j++){
