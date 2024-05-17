@@ -597,7 +597,7 @@ const gameChecker = (e)=>{
     const giveUp = document.getElementById("giveup");
     giveUp.addEventListener("click", ()=>{
 
-        if (!checker.has("gameover")){
+        if (!checker.has("gameover")&&(document.body.children[1].firstChild===null)){
             const newh2 = document.createElement("h2");
             newh2.id="winnerDisplay";
             newh2.innerText=`You give up...Computer wins!`;
@@ -611,6 +611,7 @@ const gameChecker = (e)=>{
             gbox.removeEventListener("click",gameChecker);
         }
     });
+
     //reset summary scores
     const reset = document.getElementById("reset");
     reset.addEventListener("click", ()=>{
@@ -621,3 +622,6 @@ const gameChecker = (e)=>{
         updateSummary();
     });
 });
+
+
+//prevent user from clicking give up before choosing x or o
