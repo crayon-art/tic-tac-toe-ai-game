@@ -1,0 +1,176 @@
+/* Your code here */
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+}
+
+#btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btnx{
+    border-radius: 20px;
+    font-size: large;
+    padding: 5px 20px;
+}
+
+#btno{
+    border-radius: 20px;
+    font-size: large;
+    padding: 5px 20px;
+}
+
+#controls{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#newgame{
+    border-radius: 30px;
+    font-size: large;
+    padding: 5px 20px;
+}
+
+#giveup{
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: large;
+    padding: 5px 20px;
+}
+#summary {
+    width: 50%;
+   padding-top: 40px;
+    display :flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+#reset{
+    border-radius: 20px;
+    font-size:small;
+    padding: 5px 10px;
+}
+
+#reset:hover{
+    color: white;
+    background-color: rgb(38, 135, 247);
+}
+
+#newgame:hover{
+    color: white;
+    background-color: rgb(38, 135, 247);
+}
+
+#giveup:hover{
+    color: white;
+    background-color: rgb(38, 135, 247);
+}
+
+#btnx:hover{
+    color: white;
+    background-color: blue;
+}
+
+#btno:hover{
+    color: white;
+    background-color: red;
+}
+
+#container{
+    border: 1px solid white;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+}
+
+#gameBox{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "r0c0 r0c1 r0c2"
+    "r1c0 r1c1 r1c2"
+    "r2c0 r2c1 r2c2";
+    grid-gap: 5px;
+    align-items: center;
+    justify-items: center;
+}
+
+.block{
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+    text-align: center;
+}
+
+#r0c0{
+    grid-area: r0c0;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r0c1{
+    grid-area: r0c1;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r0c2{
+    grid-area: r0c2;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r1c0{
+    grid-area: r1c0;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r1c1{
+    grid-area: r1c1;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r1c2{
+    grid-area: r1c2;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r2c0{
+    grid-area: r2c0;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r2c1{
+    grid-area: r2c1;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#r2c2{
+    grid-area: r2c2;
+    /* background-image: url("./media/X.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
