@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Tic Tac Toe DOM Long Practice",
     "scripts": {
-      "start": "node tic-tac-toe.js"
+      "start": "node app.js"
     },
     "dependencies": {},
     "devDependencies": {
