@@ -97,8 +97,14 @@ const createGameGrid = () =>{
         cont.style.backgroundImage=`url("./media/tictactoeSmall.jpg")`;
         cont.style.backgroundRepeat = 'no-repeat';
         cont.style.backgroundSize = 'cover';
+        cont.style.height = "300px";
+        cont.style.width = "300px";
     }
-    else cont.style.backgroundImage=`url("./media/tictactoe.jpg")`;
+    else {
+        cont.style.backgroundImage=`url("./media/tictactoe.jpg")`;
+        cont.style.height = "500px";
+        cont.style.width = "500px";
+    }
 
     for (let i=0; i<3; i++){
         for(let j=0; j<3; j++){
@@ -567,6 +573,15 @@ const gameChecker = (e)=>{
             temp.removeChild(temp.firstChild);
         }
 
+        //reset game screen dimensions
+        cont.style.height = "400px";
+        cont.style.width = "400px";
+
+        if(window.innerWidth < 530){
+            cont.style.height = "300px";
+            cont.style.width = "300px";
+        }
+
         //reinitialise game event listener
 
         //choose X or O
@@ -622,6 +637,3 @@ const gameChecker = (e)=>{
         updateSummary();
     });
 });
-
-
-//prevent user from clicking give up before choosing x or o
