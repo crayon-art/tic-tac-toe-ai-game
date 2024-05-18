@@ -578,8 +578,8 @@ const gameChecker = (e)=>{
         cont.style.width = "400px";
 
         if(window.innerWidth < 530){
-            cont.style.height = "300px";
-            cont.style.width = "300px";
+            cont.style.height = "200px";
+            cont.style.width = "200px";
         }
 
         //reinitialise game event listener
